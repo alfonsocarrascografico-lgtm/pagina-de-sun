@@ -1,33 +1,17 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&display=swap" rel="stylesheet">
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>SUN - Sociedad Uruguaya de Nefrología</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
-<script>
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener("click", function(e) {
-    const targetId = this.getAttribute("href").substring(1);
-    const target = document.getElementById(targetId);
 
-    if (target) {
-      e.preventDefault();
-
-      const offset = 170;
-      const top = target.offsetTop - offset;
-
-      window.scrollTo({
-        top: top,
-        behavior: "smooth"
-      });
-    }
-  });
-});
-</script>
 <body>
-
+  
   <!-- 🔥 COLUMNA GLOBAL -->
   <div class="columna-bg"></div>
 
@@ -72,9 +56,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 <a href="#congresos">Eventos</a>
 <a href="#contacto">Contacto</a>
       </nav>
-    </div>
-
-  </div>
+      <div class = "hamburger" > ☰ </div>
+    </div></div>
 </header>
 
  <section id="inicio" class="hero">
@@ -341,5 +324,33 @@ Además, promueve la investigación, el intercambio académico y la actualizaci�
 
   </div>
 </footer>
+<script>
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener("click", function(e) {
+    const targetId = this.getAttribute("href").substring(1);
+    const target = document.getElementById(targetId);
+
+    if (target) {
+      e.preventDefault();
+
+const offset = window.innerWidth <= 768 ? 80 : 172;      const top = target.offsetTop - offset;
+
+      window.scrollTo({
+        top: top,
+        behavior: "smooth"
+      });
+    }
+  });
+});
+</script>
+<script>
+const hamburger = document.querySelector('.hamburger');
+const nav = document.querySelector('.nav');
+
+hamburger.addEventListener('click', () => {
+  nav.classList.toggle('active');
+});
+</script>
 </body>
 </html>
+<!-- <div class="columna-bg"></div> -->
