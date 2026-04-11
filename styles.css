@@ -1729,7 +1729,13 @@ p {
 .cong-item:nth-child(2) img {
   height: 80px;
   object-fit: contain; /* 🔥 en lugar de cover */
-  background: #fff;     /* opcional para evitar “huecos feos” */
+  background: #eef3f5;     /* opcional para evitar “huecos feos” */
+}
+/* 🔥 bordes redondeados en novedades y congresos */
+
+.nov-item img,
+.cong-item img {
+  border-radius: 8px;
 }
 }
 
