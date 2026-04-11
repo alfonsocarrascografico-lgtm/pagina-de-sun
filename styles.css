@@ -1663,7 +1663,7 @@ p {
 
 .cong-item:nth-child(3) img {
   width: 100%;
-  height: 140px;
+  height: 180px;
   object-fit: contain;
 }
 
@@ -1674,7 +1674,12 @@ p {
   width: 100%;
   margin-top: 10px;
 }
-
+/* 🔥 SOLO la imagen más baja */
+.cong-item:nth-child(3) img {
+  width: 100%;
+  height: 130px;       /* 👈 controlás altura acá */
+  object-fit: cover;
+}
 
 /* ===== SECUNDARIOS ===== */
 
@@ -1693,12 +1698,11 @@ p {
   object-fit: cover;
 }
 
-
 /* 🔥 TEXTO (FORZADO) */
 .cong-item:nth-child(1) h2,
 .cong-item:nth-child(2) h2 {
-  font-size: 16px !important;
-  line-height: 1.3;
+  font-size: 20px !important;
+  line-height: 1.0;
   margin: 0;
 }
 
@@ -1719,7 +1723,6 @@ p {
   line-height: 1.0;
   margin: 0;
 }
-
 
 /* 🔥 2. IMÁGENES SECUNDARIAS (NO RECORTAR) */
 .cong-item:nth-child(1) img,
