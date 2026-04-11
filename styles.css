@@ -1737,5 +1737,60 @@ p {
 .cong-item img {
   border-radius: 8px;
 }
+/* 🔥 IMÁGENES CONSISTENTES */
+.nov-item img,
+.cong-item img,
+.acceso-card img,
+.cientifico-card img {
+  border-radius: 8px;
+}
+/* 🔥 TARJETAS GENERALES */
+.acceso-card,
+.cientifico-card,
+.nov-item,
+.cong-item {
+  border-radius: 10px;
+  background: #fff;
+  padding: 10px;
+}
+/* 🔥 SOMBRA GLOBAL */
+.acceso-card,
+.cientifico-card,
+.nov-item,
+.cong-item {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.07);
+}
+/* 🔥 ESPACIADO INTERNO */
+.acceso-card,
+.cientifico-card,
+.nov-item,
+.cong-item {
+  padding: 12px;
+}
+
+/* 🔥 separación entre elementos */
+.accesos-grid,
+.cientifico-grid,
+.novedades-content,
+.congresos-content {
+  gap: 12px;
+}
+/* 🔥 BOTONES */
+.boton-seccion {
+  display: inline-block;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 13px;
+}
+/* 🔥 TITULOS */
+.titulo-seccion {
+  font-weight: 600;
+}
+
+/* 🔥 TEXTOS */
+p {
+  line-height: 1.4;
+}
+
 }
 
