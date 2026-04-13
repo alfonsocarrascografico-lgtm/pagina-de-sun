@@ -1176,6 +1176,7 @@ p {
   word-break: break-word;
   overflow-wrap: break-word;
 }
+
 @media (max-width: 768px) {
 
   .columna-bg {
@@ -1226,7 +1227,6 @@ p {
     cursor: pointer;
   }
 
-
   .hero {
     overflow: visible; /* 🔥 CLAVE */
   }
@@ -1246,7 +1246,7 @@ p {
     position: fixed;
     top: 0;
     right: -100%; /* oculto */
-    width: 40%;
+    width: 50%;
     height: 100vh;
     background: white;
 
@@ -1262,7 +1262,7 @@ p {
   .nav.active {
     right: 0; /* visible */
   }
-
+  
   section {
     scroll-margin-top: 0 !important;
   }
@@ -1758,7 +1758,7 @@ p {
 .cientifico-card,
 .nov-item,
 .cong-item {
-  box-shadow: 0 4px 12px rgba(0,0,0,0.07);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.09);
 }
 /* 🔥 ESPACIADO INTERNO */
 .acceso-card,
@@ -1791,6 +1791,77 @@ p {
 p {
   line-height: 1.4;
 }
+/* ===== LAYOUT UNIFICADO MOBILE NOVEDADES ===== */
+
+.nov-card {
+  display: flex !important;
+  flex-direction: column !important;
+  height: auto !important;
+  overflow: visible !important;
+  padding: 0 !important;
+}
+
+/* IMAGEN FULL */
+.nov-img {
+  width: 100% !important;
+  height: 200px !important;
+  background-size: cover !important;
+  background-position: center !important;
+}
+
+/* TEXTO FULL */
+.nov-text {
+  width: 100% !important;
+  padding: 15px !important;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* BOTÓN ABAJO */
+.nov-text .boton-seccion {
+  margin-top: 10px;
+  align-self: flex-start;
+}
+
+/* CONTENEDOR GENERAL */
+.nov-row {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 15px;
+}
+
+/* DESTACADA (misma lógica pero más aire) */
+.nov-principal .nov-img {
+  height: 220px !important;
+}
+
+.nov-principal .nov-text {
+  padding: 20px !important;
+}
+
+  /* 🔥 LIBERAR ALTURA DE TODA LA SECCIÓN */
+  .novedades-v2,
+  .nov-principal,
+  .nov-row,
+  .novedades,
+  section {
+    height: auto !important;
+    min-height: unset !important;
+  }
+
+  /* 🔥 PERMITIR CRECER */
+  .container {
+    height: auto !important;
+  }
+
+  /* 🔥 EVITAR RECORTES */
+  .novedades,
+  .nov-row,
+  .nov-card {
+    overflow: visible !important;
+  }
+
 
 }
 

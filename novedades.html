@@ -3,17 +3,39 @@
 <head>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&display=swap" rel="stylesheet">
   <meta charset="UTF-8">
-  <title>Institucional - SUN</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Científico - SUN</title>
   <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Botones estilo "Ver novedades" para sección científica */
+    .btn-cientifico {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 24px;
+      background-image: url('img/boton-de-secciones.gif');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      border-radius: 8px;
+      color: white;
+      font-size: 18px;
+      text-decoration: none;
+      transition: opacity 0.3s ease;
+      margin-top: 10px;
+    }
+    .btn-cientifico:hover {
+      opacity: 0.8;
+    }
+  </style>
 </head>
 
 <body>
 
-  <!-- HEADER (MISMO QUE INDEX) -->
+<!-- HEADER -->
 <header class="header">
   <div class="container header-content">
 
-    <!-- 🔼 NUEVA FILA: REDES -->
     <div class="header-top">
       <div class="social">
         <a href="https://www.instagram.com/sociedad_uruguaya_nefrologia/" target="_blank">
@@ -25,16 +47,15 @@
         </a>
 
         <a href="https://wa.me/59892539901" target="_blank">
-  <img src="img/redes-sociales-03.png" alt="WhatsApp">
-</a>
+          <img src="img/redes-sociales-03.png" alt="WhatsApp">
+        </a>
 
         <a href="index.html#contacto">
-          <img src="img/redes-sociales-04.png" alt="Red 4">
+          <img src="img/redes-sociales-04.png" alt="Contacto">
         </a>
       </div>
     </div>
 
-    <!-- 🔽 FILA ORIGINAL -->
     <div class="header-bottom">
       <div class="logo">
         <a href="index.html">
@@ -42,21 +63,23 @@
         </a>
       </div>
 
+      <!-- 🔥 BOTÓN HAMBURGUESA -->
+      <div class="hamburger">☰</div>
+
       <nav class="nav">
-    <a href="index.html#inicio">Inicio</a>
-<a href="index.html#accesos-rapidos">Accesos</a>
-<a href="index.html#institucional">Institucional</a>
-<a href="index.html#cientifico">Científico</a>
-<a href="index.html#novedades">Novedades</a>
-<a href="index.html#congresos">Eventos</a>
-<a href="index.html#contacto">Contacto</a>
+        <a href="index.html#inicio">Inicio</a>
+        <a href="index.html#accesos-rapidos">Accesos</a>
+        <a href="index.html#institucional">Institucional</a>
+        <a href="index.html#cientifico">Científico</a>
+        <a href="index.html#novedades">Novedades</a>
+        <a href="index.html#congresos">Eventos</a>
+        <a href="index.html#contacto">Contacto</a>
       </nav>
     </div>
 
   </div>
 </header>
 
-  <!-- SCRIPT (MISMO QUE INDEX) -->
 <section class="novedades-v2">
 
   <!-- CARD PRINCIPAL -->
@@ -99,26 +122,7 @@
     <!-- duplicar .nov-row según necesites -->
 
   </div>
-<script>
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener("click", function(e) {
-    const targetId = this.getAttribute("href").substring(1);
-    const target = document.getElementById(targetId);
-
-    if (target) {
-      e.preventDefault();
-
-      const offset = 170;
-      const top = target.offsetTop - offset;
-
-      window.scrollTo({
-        top: top,
-        behavior: "smooth"
-      });
-    }
-  });
-});
-</script>
+  
 </section>
 <footer class="footer">
   <div class="container footer-content">
@@ -144,5 +148,43 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
   </div>
 </footer>
+<!-- SCRIPT SCROLL -->
+<script>
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener("click", function(e) {
+    const targetId = this.getAttribute("href").substring(1);
+    const target = document.getElementById(targetId);
+
+    if (target) {
+      e.preventDefault();
+
+const offset = window.innerWidth <= 768 ? 80 : 172;      const top = target.offsetTop - offset;
+
+      window.scrollTo({
+        top: top,
+        behavior: "smooth"
+      });
+    }
+  });
+});
+</script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const hamburger = document.querySelector('.hamburger');
+  const nav = document.querySelector('.nav');
+
+  if (hamburger && nav) {
+    hamburger.addEventListener('click', () => {
+      nav.classList.toggle('active');
+    });
+
+    document.querySelectorAll('.nav a').forEach(link => {
+      link.addEventListener('click', () => {
+        nav.classList.remove('active');
+      });
+    });
+  }
+});
+</script>
 </body>
 </html>
