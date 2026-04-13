@@ -59,7 +59,7 @@
     <div class="header-bottom">
       <div class="logo">
         <a href="index.html">
-          <img src="img/logo sun.png" alt="Logo SUN">
+          <img src="img/LOGO-SUN.jpg" alt="Logo SUN">
         </a>
       </div>
 
@@ -148,23 +148,36 @@
 
   </div>
 </footer>
-<!-- SCRIPT SCROLL -->
 <script>
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener("click", function(e) {
-    const targetId = this.getAttribute("href").substring(1);
-    const target = document.getElementById(targetId);
+window.addEventListener("DOMContentLoaded", () => {
+  const getOffset = () => window.innerWidth <= 768 ? 80 : 172;
 
+  // 👉 Si viene con hash desde otra página
+  const hash = window.location.hash;
+  if (hash) {
+    const target = document.querySelector(hash);
     if (target) {
-      e.preventDefault();
-
-const offset = window.innerWidth <= 768 ? 80 : 172;      const top = target.offsetTop - offset;
-
-      window.scrollTo({
-        top: top,
-        behavior: "smooth"
-      });
+      const top = target.offsetTop - getOffset();
+      window.scrollTo({ top: top, behavior: "smooth" });
     }
+  }
+
+  // 👉 Scroll interno
+  document.querySelectorAll('a[href*="#"]').forEach(anchor => {
+    anchor.addEventListener("click", function(e) {
+      const url = new URL(this.href);
+      const targetId = url.hash.substring(1);
+      const target = document.getElementById(targetId);
+
+      if (target) {
+        e.preventDefault();
+        const top = target.offsetTop - getOffset();
+        window.scrollTo({
+          top: top,
+          behavior: "smooth"
+        });
+      }
+    });
   });
 });
 </script>

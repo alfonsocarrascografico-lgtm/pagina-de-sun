@@ -1861,7 +1861,151 @@ p {
   .nov-card {
     overflow: visible !important;
   }
+/* ===== INSTITUCIONAL MOBILE (LAYOUT LIMPIO) ===== */
 
+  /* 🔥 eliminar grid */
+  .institucional-content {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 20px;
+  }
+
+  /* 🔥 ORDEN EXACTO */
+  .inst-left { order: 1; }
+  .inst-center { order: 2; }
+  .inst-right { order: 3; }
+
+  /* 🔥 TODO AL ANCHO */
+  .inst-left,
+  .inst-center,
+  .inst-right {
+    width: 100% !important;
+  }
+
+  /* 🔥 IMAGEN CONTROLADA */
+  .inst-left img {
+    width: 100% !important;
+    height: auto;
+  }
+
+  /* 🔥 TEXTOS PROLIJOS */
+  .inst-center,
+  .inst-right {
+    text-align: left;
+  }
+
+  /* 🔥 EVITAR DESBORDE GLOBAL */
+  body {
+    overflow-x: hidden;
+  }
+
+  /* 🔥 ROMPER GRID SÍ O SÍ */
+  .institucional .institucional-content {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  /* 🔥 FORZAR BLOQUES */
+  .institucional .inst-left,
+  .institucional .inst-center,
+  .institucional .inst-right {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  /* 🔥 ORDEN */
+  .institucional .inst-left { order: 1 !important; }
+  .institucional .inst-center { order: 2 !important; }
+  .institucional .inst-right { order: 3 !important; }
+
+  /* 🔥 IMAGEN NO ROMPE */
+  .institucional .inst-left img {
+    width: 100% !important;
+    height: auto !important;
+  }
+  /* 🔥 FIX INSTITUCIONAL MOBILE */
+.section-content {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 20px;
+}
+
+/* Cada bloque ocupa todo el ancho */
+.col {
+  width: 100% !important;
+}
+
+/* Imagen arriba */
+.col-left {
+  order: 1;
+}
+
+/* Historia */
+.col-center {
+  order: 2;
+}
+
+/* Misión / Visión */
+.col-right {
+  order: 3;
+}
+
+/* Imagen responsive */
+.col-left img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+/* 🎨 CONTENEDOR GENERAL */
+.section {
+  padding: 20px 16px;
+}
+
+/* 🧱 TARJETAS */
+.section-content .col {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+/* 🖼 IMAGEN COMO TARJETA */
+.col-left {
+  padding: 0;
+  overflow: hidden;
+}
+
+.col-left img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 16px;
+}
+
+/* 📝 TEXTOS */
+.col h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.col p {
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* 🔘 BOTON FLECHA */
+.nav-btn-img {
+  margin-top: 15px;
+
+  .nav-btn-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 40px;
+  height: 40px;
+}
 
 }
 

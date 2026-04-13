@@ -59,7 +59,7 @@
     <div class="header-bottom">
       <div class="logo">
         <a href="index.html">
-          <img src="img/logo sun.png" alt="Logo SUN">
+          <img src="img/LOGO-SUN.jpg" alt="Logo SUN">
         </a>
       </div>
 
@@ -136,24 +136,60 @@ Marzo 26 (Virtual): Seminario para Nefrólogos Jóvenes 2026 - Anatomía patol�
   </div> <!-- 👈 ACÁ CIERRA EL CONTAINER -->
 
 </section>
+<footer class="footer">
+  <div class="container footer-content">
 
- <!-- SCRIPT SCROLL -->
+    <div class="footer-left">
+      <img src="img/logo byn.png" alt="SUN">
+      </div>
+
+    <div class="footer-center">
+      <p>SITIOS DE INTERES</P>
+      <P>https://www.nefrologia.hc.edu.uy/</P>
+      <P>https://www.asn-online.org/</P>
+      <P>https://nefrologiaaldia.org/</P>
+      <P>https://www.theisn.org/</P>
+      </div>
+
+    <div class="footer-right">
+      <p>Lord Ponsonby 2430</p>
+      <p>Montevideo, Uruguay</p>
+      <p>092 539 901</p>
+      <p>info@sun.org.uy</p>
+      </div>
+
+  </div>
+</footer>
 <script>
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener("click", function(e) {
-    const targetId = this.getAttribute("href").substring(1);
-    const target = document.getElementById(targetId);
+window.addEventListener("DOMContentLoaded", () => {
+  const getOffset = () => window.innerWidth <= 768 ? 80 : 172;
 
+  // 👉 Si viene con hash desde otra página
+  const hash = window.location.hash;
+  if (hash) {
+    const target = document.querySelector(hash);
     if (target) {
-      e.preventDefault();
-
-const offset = window.innerWidth <= 768 ? 80 : 172;      const top = target.offsetTop - offset;
-
-      window.scrollTo({
-        top: top,
-        behavior: "smooth"
-      });
+      const top = target.offsetTop - getOffset();
+      window.scrollTo({ top: top, behavior: "smooth" });
     }
+  }
+
+  // 👉 Scroll interno
+  document.querySelectorAll('a[href*="#"]').forEach(anchor => {
+    anchor.addEventListener("click", function(e) {
+      const url = new URL(this.href);
+      const targetId = url.hash.substring(1);
+      const target = document.getElementById(targetId);
+
+      if (target) {
+        e.preventDefault();
+        const top = target.offsetTop - getOffset();
+        window.scrollTo({
+          top: top,
+          behavior: "smooth"
+        });
+      }
+    });
   });
 });
 </script>

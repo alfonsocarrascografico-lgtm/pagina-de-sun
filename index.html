@@ -43,7 +43,7 @@
     <div class="header-bottom">
       <div class="logo">
         <a href="index.html">
-          <img src="img/logo sun.png" alt="Logo SUN">
+          <img src="img/LOGO-SUN.jpg" alt="Logo SUN">
         </a>
       </div>
 
@@ -346,6 +346,28 @@ const offset = window.innerWidth <= 768 ? 80 : 172;      const top = target.offs
       });
     }
   });
+});
+</script>
+<script>
+window.addEventListener("load", () => {
+  const getOffset = () => window.innerWidth <= 768 ? 80 : 172;
+
+  const scrollToHash = () => {
+    const hash = window.location.hash;
+    if (hash) {
+      const target = document.querySelector(hash);
+      if (target) {
+        const top = target.offsetTop - getOffset();
+        window.scrollTo({
+          top: top,
+          behavior: "smooth"
+        });
+      }
+    }
+  };
+
+  // 🔥 Ejecuta después de cargar TODO
+  setTimeout(scrollToHash, 100);
 });
 </script>
 <script>
