@@ -251,14 +251,14 @@ overflow: hidden;
 .novedades {
   padding: 35px 0;
   position: relative;
-  background-color: #d3d7df; /* 👈 AQUÍ */ 
+  background-color: #fff; /* 👈 AQUÍ */ 
 }
 
 .novedades::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: #d3d7df;
+  background: #fff;
   z-index: 0;
 }
 .novedades-content {
@@ -288,14 +288,14 @@ overflow: hidden;
 .congresos {
   padding: 120px 0;
   position: relative;
-  background-color: #fff; /* 👈 AQUÍ */ 
+  background-color: #d3d7df; /* 👈 AQUÍ */ 
 }
 
 .congresos::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: #fff;
+  background: #d3d7df;
   z-index: 0;
 }
 .congresos-content {
