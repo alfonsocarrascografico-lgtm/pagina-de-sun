@@ -2004,4 +2004,101 @@ p {
   width: 40px;
   height: 40px;
 }
+}
+@media (min-width: 1024px) {
 
+  @media (min-width: 1024px) {
+
+  .novedades-content .nov-item:nth-child(1),
+  .novedades-content .nov-item:nth-child(2) {
+
+    display: flex;
+    flex-direction: column;
+
+    background: #eceef0;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  .novedades-content .nov-item:nth-child(1) img,
+  .novedades-content .nov-item:nth-child(2) img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+  }
+
+  .novedades-content .nov-item:nth-child(1) p,
+  .novedades-content .nov-item:nth-child(2) p {
+    padding: 15px;
+    margin: 0;
+  }
+
+  .novedades-content .nov-item:nth-child(1) .contenedor-boton,
+  .novedades-content .nov-item:nth-child(2) .contenedor-boton {
+    padding: 0 15px 15px;
+  }
+
+}
+  .novedades-content .nov-item:nth-child(1),
+  .novedades-content .nov-item:nth-child(2) {
+
+    display: flex;
+    flex-direction: column;
+
+    background: #eceef0;
+    border-radius: 12px;
+    overflow: hidden;
+
+    /* 🔥 ESTO */
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+  }
+
+.nov-item:hover,
+.cong-item:hover {
+  transform: translateY(-5px);
+}
+
+  /* COLUMNAS 1 Y 2 COMO TARJETAS */
+  .congresos-content .cong-item:nth-child(1),
+  .congresos-content .cong-item:nth-child(2) {
+
+    display: flex;
+    flex-direction: column;
+
+    background: #eceef0;
+    border-radius: 12px;
+    overflow: hidden;
+
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  /* IMAGEN */
+  .congresos-content .cong-item:nth-child(1) img,
+  .congresos-content .cong-item:nth-child(2) img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+  }
+
+  /* TEXTO */
+  .congresos-content .cong-item:nth-child(1) p,
+  .congresos-content .cong-item:nth-child(2) p {
+    padding: 15px;
+    margin: 0;
+  }
+
+  /* BOTÓN */
+  .congresos-content .cong-item:nth-child(1) .contenedor-boton,
+  .congresos-content .cong-item:nth-child(2) .contenedor-boton {
+    padding: 0 15px 15px;
+  }
+
+  /* HOVER PRO */
+  .congresos-content .cong-item:nth-child(1):hover,
+  .congresos-content .cong-item:nth-child(2):hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+  }
+
+}
