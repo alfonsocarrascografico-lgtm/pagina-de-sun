@@ -1402,8 +1402,74 @@ p {
     line-height: 1.2;
   }
  grid-auto-rows: 110px;
+ 
+.hero-content {
+  height: 50vh;
+  display: flex;
+  align-items: center;
+}
 
+  .socios-grid {
+    grid-template-columns: repeat(1fr);
+    gap: 8px;
+  }
 
+  .socios-card {
+    padding: 8px;
+  }
+
+  .socios-icono {
+    width: 35px;
+    height: 35px;
+    margin-bottom: 8px;
+  }
+
+  .socios-card h3 {
+    font-size: 16px;
+    margin-bottom: 6px;
+    line-height: 1.5;
+  }
+
+  .socios-card p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  #socios-rapidos {
+    padding: 30px 10px;
+  }
+
+  .titulo-seccion {
+    padding-top: 40px;
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+
+  .socios-grid { 
+    align-items: start ; /* 🔥 evita que se estiren */ 
+  } 
+
+  .socios-card {
+    padding: 6px;
+  }
+
+  .socios-icono {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 4px;
+  }
+
+  .socios-card h3 {
+    font-size: 16px;
+    margin-bottom: 3px;
+    line-height: 1.1;
+  }
+
+  .socios-card p {
+    font-size: 13px;
+    line-height: 1.2;
+  }
+ grid-auto-rows: 110px;
  /* ===== CIENTIFICO MOBILE FIX ===== */
 
 #cientifico .cientifico-grid {
@@ -2004,6 +2070,7 @@ p {
   width: 40px;
   height: 40px;
 }
+
 }
 @media (min-width: 1024px) {
 
@@ -2101,4 +2168,214 @@ p {
     box-shadow: 0 15px 35px rgba(0,0,0,0.12);
   }
 
+  #socios {
+  padding: 80px 20px;
+  min-height: 480px;
+  background: #e7edef;
+}
+
+.titulo-seccion {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 28px;
+}
+}
+.socios-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.socios-card {
+  display: block;
+  padding: 15px;
+  background: white;
+  border-radius: 10px;
+  text-decoration: none;
+  text-align: center;
+  color: #333;
+
+  transition: all 0.3s ease;
+  border: 1px solid #eee;
+}
+
+.socios-card h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.socios-card p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* 🔥 hover elegante */
+.socios-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 10px rgba(0,0,0,0.08);
+}
+
+.grid-socios {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.socios {
+  padding: 12px 20px;
+  background: #d3dbdd;
+  border-radius: 6px;
+  text-decoration: none;
+}
+.hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.hero-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.acceso-card {
+  text-align: center;
+}
+
+.socios-icono {
+  width: 55px;
+  height: 55px;
+  margin: 0 auto 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.socios-icono img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.socios-icono {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 15px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+/* SECCIÓN SOCIOS EN INDEX */
+#socios {
+  position: relative;
+  z-index: 3;
+  
+  /* Fondo Fijo */
+  background-image: url('img/cientifico.jpg'); /* Reemplaza por la ruta de tu imagen */
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  
+  padding: 60px 20px;
+}
+
+/* Si tu fondo es oscuro o con contraste, puedes poner un superpuesto (overlay) opcional */
+#socios::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(221, 219, 219, 0.4); /* Capa oscura opcional para legibilidad del texto */
+  z-index: 4;
+}
+
+/* Asegurar que el contenido y las cards estén encima de la capa y la columna */
+#socios > div,
+#socios .tarjetas-contenedor,
+#socios .card {
+  position: relative;
+  z-index: 10;
+}
+/* AJUSTE MOBILE PARA SECCIÓN SOCIOS Y ACCESOS */
+@media screen and (max-width: 768px) {
+  
+  /* Forzamos a que el contenedor de las tarjetas de la sección Socios sea de 1 sola columna */
+  #socios .recursos-grid,
+  #socios > div > div {
+    display: grid !important;
+    grid-template-columns: 1fr !important; /* Apila verticalmente las cards */
+    gap: 20px !important;
+    width: 100% !important;
+  }
+
+  /* Asegura que las tarjetas individuales abarquen el ancho completo */
+  #socios .recursos-grid > a,
+  #socios .recursos-grid > div,
+  #socios > div > div > a,
+  #socios > div > div > div {
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+@media screen and (max-width: 768px) {
+
+  /* Unifica la altura de las tarjetas de Socios y Accesos en mobile */
+  #socios .card, 
+  #accesos-rapidos .card { /* Reemplaza .card por la clase o tag real de tus tarjetas */
+    height: 100px !important; /* Ajustá este valor en px según el alto que busques */
+    box-sizing: border-box !important;
+    
+    /* Para que el contenido interno (título, texto, icono) quede distribuido de forma prolija */
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important; 
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+}
+@media screen and (max-width: 768px) {
+
+  /* 1. Unifica el contenedor y la altura fija de las tarjetas */
+  #accesos-rapidos a,
+  #accesos-rapidos .card,
+  #socios a,
+  #socios .card {
+    height: 120px !important; /* Ajustá estos px según lo alto que las quieras */
+    padding: 20px 15px !important;
+    box-sizing: border-box !important;
+    
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  /* 2. Unifica el tamaño de los TÍTULOS de las tarjetas */
+  #accesos-rapidos h3,
+  #socios h3 {
+    font-size: 1.1rem !important;
+    margin-bottom: 8px !important;
+    line-height: 1.2 !important;
+  }
+
+  /* 3. Unifica el tamaño y la altura de línea de los PÁRRAFOS */
+  #accesos-rapidos p,
+  #socios p {
+    font-size: 0.85rem !important;
+    line-height: 1.3 !important;
+    margin: 0 !important;
+  }
+
+}
+.socios-icono {
+    width: 35px;
+    height: 35px;
+    margin-bottom: 8px;
+  }
 }
