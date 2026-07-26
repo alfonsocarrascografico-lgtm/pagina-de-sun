@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Recomendaciones - Sociedad Uruguaya de Nefrología</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f7fa;
+      display: flex;
+      justify-content: center;
+      padding: 40px;
+    }
+
+    .form-container {
+      background: white;
+      padding: 24px;
+      border-radius: 12px;
+      width: 100%;
+      max-width: 500px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    h2 {
+      margin-bottom: 16px;
+    }
+
+    label {
+      display: block;
+      margin-top: 12px;
+      font-weight: bold;
+      text-align: left;
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    input, textarea, select {
+      width: 90%;
+      padding: 10px;
+      margin-top: 6px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      box-sizing: border-box; /* Garantiza que el padding no rompa el ancho */
+    }
+
+    input:focus, textarea:focus, select:focus {
+      border-color: #3B82F6;
+      outline: none;
+    }
+
+    button {
+      margin-top: 20px;
+      width: 90%;
+      padding: 12px;
+      background: #3B82F6;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    button:hover {
+      background: #2563EB;
+    }
+  </style>
+</head>
+<body>
+
+<div class="form-container">
+  <h2>Formulario de Recomendaciones</h2>
+
+  <!-- Reemplaza la URL de action por tu endpoint de Formspree o servicio de mail -->
+  <form action="https://formspree.io/f/tu-id" method="POST">
+
+    <label>Nombre completo</label>
+    <input type="text" name="nombre" placeholder="Nombre y apellido" required>
+
+    <label>Email</label>
+    <input type="email" name="email" placeholder="correo@ejemplo.com" required>
+
+    <label>Teléfono</label>
+    <input type="tel" name="telefono" placeholder="099 123 456">
+
+    <label>Tipo de recomendación</label>
+    <select name="tipo_recomendacion" required>
+      <option value="">Seleccionar</option>
+      <option value="cientifica">Sugerencia Científica / Académica</option>
+      <option value="institucional">Propuesta Institucional</option>
+      <option value="socios">Mejora para Socios</option>
+      <option value="otra">Otra consulta / sugerencia</option>
+    </select>
+
+    <label>Detalle de la recomendación</label>
+    <textarea name="mensaje" rows="5" placeholder="Escribí aquí tu propuesta o sugerencia..." required></textarea>
+
+    <button type="submit">Enviar recomendación</button>
+
+  </form>
+</div>
+
+</body>
+</html>
