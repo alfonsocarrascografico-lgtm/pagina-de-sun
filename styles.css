@@ -2379,3 +2379,9 @@ p {
     margin-bottom: 8px;
   }
 }
+.comision-nav {
+  display: flex;
+  justify-content: flex-end; /* Alinea los botones a la derecha */
+  gap: 10px;               /* Separa horizontalmente las dos flechas */
+  margin-top: 20px;
+}
