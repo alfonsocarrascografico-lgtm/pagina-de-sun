@@ -2385,4 +2385,12 @@ p {
   gap: 10px;               /* Separa horizontalmente las dos flechas */
   margin-top: 20px;
 }
-
+.tarjeta {
+  scroll-margin-top: 140px; /* Cambia 80px por la altura real de tu header */
+}
+:target {
+  scroll-margin-top: 140px;
+}
+.nov-text-block + .nov-text-block {
+  margin-top: 1.5rem; /* Le da un espacio arriba al segundo bloque */
+}
