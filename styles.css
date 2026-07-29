@@ -2394,3 +2394,16 @@ p {
 .nov-text-block + .nov-text-block {
   margin-top: 1.5rem; /* Le da un espacio arriba al segundo bloque */
 }
+/* Espaciado superior para que el salto de ancla no quede debajo del header */
+section[id],
+.nov-principal[id] {
+  scroll-margin-top: 110px; /* Ajusta 110px según el alto exacto de tu header */
+}
+
+/* Ajuste para pantallas móviles si tu header cambia de tamaño */
+@media (max-width: 768px) {
+  section[id],
+  .nov-principal[id] {
+    scroll-margin-top: 80px;
+  }
+}
