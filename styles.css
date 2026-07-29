@@ -2386,10 +2386,10 @@ p {
   margin-top: 20px;
 }
 .tarjeta {
-  scroll-margin-top: 140px; /* Cambia 80px por la altura real de tu header */
+  scroll-margin-top: 180px; /* Cambia 80px por la altura real de tu header */
 }
 :target {
-  scroll-margin-top: 140px;
+  scroll-margin-top: 180px;
 }
 .nov-text-block + .nov-text-block {
   margin-top: 1.5rem; /* Le da un espacio arriba al segundo bloque */
