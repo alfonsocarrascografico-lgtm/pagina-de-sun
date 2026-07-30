@@ -2411,3 +2411,134 @@ section[id],
 .nov-principal {
   scroll-margin-top: 110px;
 }
+/* =========================================
+   ESTILOS DEL FOOTER - SUN
+========================================= */
+
+/* Estructura general */
+.site-footer {
+  background-color: #adb3b8; /* Ajusta este color si tu footer usa otro tono oscuro */
+  color: #3d3d3d;
+  padding: 40px 20px 20px 20px;
+  font-family: inherit;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Estilo para las columnas */
+.footer-col {
+  flex: 1;
+  min-width: 250px;
+  padding: 0 30px; 
+  box-sizing: border-box;
+}
+
+/* Línea vertical divisora (aplica a la 1ª y 2ª columna) */
+.footer-col:not(:last-child) {
+  border-right: 1px solid rgba(251, 251, 251, 0.501); 
+}
+
+/* Ajustes de padding para los extremos */
+.footer-col:first-child {
+  padding-left: 0;
+}
+.footer-col:last-child {
+  padding-right: 0;
+  border-right: none;
+}
+
+/* Textos y listas dentro de las columnas */
+.footer-col p, 
+.footer-col ul {
+  margin-bottom: 15px;
+  font-size: 0.95em;
+  line-height: 1.6;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-col li {
+  margin-bottom: 10px;
+}
+
+/* Estilo del logo en el footer */
+.footer-logo {
+  max-width: 150px;
+  margin-bottom: 15px;
+  display: block;
+}
+
+/* =========================================
+   ENLACES DEL FOOTER UNIFICADOS
+========================================= */
+.site-footer a,
+.site-footer a:visited,
+.site-footer a:active {
+  color: inherit !important;
+  text-decoration: none !important;
+  transition: opacity 0.3s ease;
+}
+
+.site-footer a:hover {
+  opacity: 0.7;
+}
+
+/* =========================================
+   LÍNEA FINAL (SUB-FOOTER)
+========================================= */
+.footer-bottom {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  text-align: center;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-bottom p {
+  font-size: 0.85em;
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0;
+}
+
+/* =========================================
+   ADAPTACIÓN PARA CELULARES (RESPONSIVE)
+========================================= */
+@media (max-width: 768px) {
+  .footer-col {
+    padding: 0;
+    margin-bottom: 30px;
+    text-align: center; /* Opcional: centra el texto en móviles */
+  }
+  
+  .footer-col:not(:last-child) {
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15); /* Línea horizontal en móviles */
+    padding-bottom: 30px;
+  }
+  
+  .footer-logo {
+    margin: 0 auto 15px auto;
+  }
+}
+.site-footer {
+  position: relative;        /* Habilita la propiedad z-index */
+  z-index: 999;              /* Lo sitúa por encima de casi cualquier elemento */
+  isolation: isolate;        /* Asegura que cree su propio nivel de capas */
+  
+  /* Resto de tus estilos habituales del footer */
+  background-color: #a5a8aa; 
+  color: #4f4e4e;
+  padding: 40px 20px 20px 20px;
+}
