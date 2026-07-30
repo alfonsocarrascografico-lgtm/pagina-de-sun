@@ -27,6 +27,20 @@
     .btn-cientifico:hover {
       opacity: 0.8;
     }
+
+    /* Ajustes para íconos de contacto */
+    .contacto-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+    .icono-contacto {
+      width: 18px;
+      height: 18px;
+      fill: #3d3d3d;
+      flex-shrink: 0;
+    }
   </style>
 </head>
 
@@ -63,62 +77,55 @@
         </a>
       </div>
 
-      <!-- 🔥 BOTÓN HAMBURGUESA -->
+      <!-- BOTÓN HAMBURGUESA -->
       <div class="hamburger">☰</div>
 
       <nav class="nav">
-<a href="index.html#institucional">Sobre SUN</a>
-<a href="index.html#accesos-rapidos">Accesos</a>
-<a href="index.html#socios">Socios</a>
-<a href="index.html#cientifico">Grupos de trabajo</a>
-<a href="index.html#novedades">Novedades</a>
-<a href="index.html#congresos">Congresos cursos</a>
-<a href="index.html#contacto">Contacto</a>
+        <a href="index.html#institucional">Sobre SUN</a>
+        <a href="index.html#accesos-rapidos">Accesos</a>
+        <a href="index.html#socios">Socios</a>
+        <a href="index.html#cientifico">Grupos de trabajo</a>
+        <a href="index.html#novedades">Novedades</a>
+        <a href="index.html#congresos">Congresos cursos</a>
+        <a href="index.html#contacto">Contacto</a>
       </nav>
     </div>
 
   </div>
 </header>
 
-  <!-- CONTENIDO -->
- <!-- PRINCIPAL -->
-  <section id="congresos">
-
+<!-- CONTENIDO PRINCIPAL -->
+<section id="congresos" class="seccion-destacada">
   <div class="container">
-
-    <!-- PRINCIPAL -->
     <div class="nov-principal">
       <a href="#" class="nov-card horizontal" id="congreso-principal">        
         <div class="nov-img" style="background-image: url('img/auditorio.jpg');"></div>
         
         <div class="nov-text">
           <h2>Principales Congresos y Encuentros 2026</h2>
-          <p>Marzo 6-7 (Montevideo, Uruguay): Primer Encuentro Internacional Nefrológico 2026 (SLANH, Médica Uruguaya, Mayo Clinic). Venue: Hotel Hyatt Centric. Enfocado en enfermedad renal crónica y avances en diálisis.<br><br>
-
-Marzo 4-7 (Internacional/LATAM): Séptimo Congreso GEMAV - Primer Congreso GEMAV LATAM. Congreso internacional de acceso vascular.<br><br>
-
-Abril 17-18 (Argentina): Séptimo congreso de la región SAR (Sociedad Argentina de Reumatología - posible cruce con afecciones renales/autoinmunes, confirmar agenda nefrológica específica).<br><br>
-
-Octubre 1-2 (Montevideo, Uruguay): XIV Congreso Uruguayo de Nefrología y jornadas asociadas. Lugar: Centro de Convenciones Radisson.<br><br>
-
-Octubre 28-31 (Mar del Plata, Argentina): XIV Congreso ALANEPE (Asociación Latinoamericana de Nefrología Pediátrica)<br><br>
-
-Marzo 26 (Virtual): Seminario para Nefrólogos Jóvenes 2026 - Anatomía patológica, organizado por Alanepe (Asociación Latinoamericana de Nefrología Pediátrica).</p>
+          <p>
+            Marzo 6-7 (Montevideo, Uruguay): Primer Encuentro Internacional Nefrológico 2026 (SLANH, Médica Uruguaya, Mayo Clinic). Venue: Hotel Hyatt Centric. Enfocado en enfermedad renal crónica y avances en diálisis.<br><br>
+            Marzo 4-7 (Internacional/LATAM): Séptimo Congreso GEMAV - Primer Congreso GEMAV LATAM. Congreso internacional de acceso vascular.<br><br>
+            Abril 17-18 (Argentina): Séptimo congreso de la región SAR (Sociedad Argentina de Reumatología - posible cruce con afecciones renales/autoinmunes, confirmar agenda nefrológica específica).<br><br>
+            Octubre 1-2 (Montevideo, Uruguay): XIV Congreso Uruguayo de Nefrología y jornadas asociadas. Lugar: Centro de Convenciones Radisson.<br><br>
+            Octubre 28-31 (Mar del Plata, Argentina): XIV Congreso ALANEPE (Asociación Latinoamericana de Nefrología Pediátrica)<br><br>
+            Marzo 26 (Virtual): Seminario para Nefrólogos Jóvenes 2026 - Anatomía patológica, organizado por Alanepe (Asociación Latinoamericana de Nefrología Pediátrica).
+          </p>
         </div>
-
       </a>
     </div>
+  </div>
+</section>
 
-<!-- SECCIÓN CONGRESOS -->
-<section id="congresos" class="section alt-bg">
+<!-- SECCIÓN LISTADO CONGRESOS (FONDO ANCHO COMPLETO 100%) -->
+<section class="section alt-bg">
   
   <!-- CONTENEDOR 1: Bloque original de congresos -->
   <div class="container section-content">
-    
     <div class="nov-listado" id="congresos-listado-1">
       <div class="nov-row">
 
-<a href="https://atenea.com.uy/eventos/xiv-congreso-uruguayo-de-nefrologia" target="_blank" rel="noopener noreferrer" class="nov-card">
+        <a href="https://atenea.com.uy/eventos/xiv-congreso-uruguayo-de-nefrologia" target="_blank" rel="noopener noreferrer" class="nov-card">
           <div class="nov-img" style="background-image: url('img/afiche-con-logo-smu.jpg');"></div>
           <div class="nov-text">
             <h3>XIV Congreso Uruguayo de Nefrología 2026</h3>
@@ -136,12 +143,10 @@ Marzo 26 (Virtual): Seminario para Nefrólogos Jóvenes 2026 - Anatomía patol�
 
       </div>
     </div>
+  </div>
 
-  </div> <!-- Cierre del primer contenedor -->
-
-  <!-- CONTENEDOR 2: Nuevos bloques de congresos (con el mismo ancho exacto) -->
+  <!-- CONTENEDOR 2: Nuevos bloques de congresos -->
   <div class="container section-content" style="margin-top: 30px;">
-    
     <div class="nov-listado" id="congresos-listado-2">
       <div class="nov-row">
 
@@ -163,43 +168,39 @@ Marzo 26 (Virtual): Seminario para Nefrólogos Jóvenes 2026 - Anatomía patol�
 
       </div>
     </div>
-
-  </div> <!-- Cierre del segundo contenedor -->
+  </div>
 
 </section>
+
+<!-- FOOTER (FONDO ANCHO COMPLETO 100%) -->
 <footer class="site-footer">
   <div class="footer-container">
     
     <!-- COLUMNA 1: Logo y Contacto -->
     <div class="footer-col footer-info">
       <img src="img/LOGO-BN.png" alt="Sociedad Uruguaya de Nefrología" class="footer-logo">
-      <div class="footer-info">
-  <p><strong>Sociedad Uruguaya de Nefrología</strong></p>
-  
-  <p class="contacto-item">
-    <!-- Ícono Ubicación (estilo pin circular) -->
-    <svg class="icono-contacto" viewBox="0 0 24 24">
-      <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
-    </svg>
-    <span>Lord Ponsonby 2430, Montevideo, Uruguay</span>
-  </p>
+      <p><strong>Sociedad Uruguaya de Nefrología</strong></p>
+      
+      <p class="contacto-item">
+        <svg class="icono-contacto" viewBox="0 0 24 24">
+          <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+        </svg>
+        <span>Lord Ponsonby 2430, Montevideo, Uruguay</span>
+      </p>
 
-  <p class="contacto-item">
-    <!-- Ícono Teléfono -->
-    <svg class="icono-contacto" viewBox="0 0 24 24">
-      <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
-    </svg>
-    <span>+598 92 539 901</span>
-  </p>
+      <p class="contacto-item">
+        <svg class="icono-contacto" viewBox="0 0 24 24">
+          <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+        </svg>
+        <span>+598 92 539 901</span>
+      </p>
 
-  <p class="contacto-item">
-    <!-- Ícono Email -->
-    <svg class="icono-contacto" viewBox="0 0 24 24">
-      <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
-    </svg>
-    <span>contacto@sun.org.uy</span>
-  </p>
-</div>
+      <p class="contacto-item">
+        <svg class="icono-contacto" viewBox="0 0 24 24">
+          <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+        </svg>
+        <span>contacto@sun.org.uy</span>
+      </p>
     </div>
 
     <!-- COLUMNA 2: Secciones del Sitio -->
@@ -247,6 +248,8 @@ Marzo 26 (Virtual): Seminario para Nefrólogos Jóvenes 2026 - Anatomía patol�
     <p>© 2026 SUN - Sociedad Uruguaya de Nefrología | Desarrollado por Alfonso Carrasco Gráfico</p>
   </div>
 </footer>
+
+<!-- SCRIPTS -->
 <script>
 window.addEventListener("DOMContentLoaded", () => {
   const getOffset = () => window.innerWidth <= 768 ? 80 : 172;
@@ -280,6 +283,7 @@ window.addEventListener("DOMContentLoaded", () => {
   });
 });
 </script>
+
 <script>
 document.addEventListener("DOMContentLoaded", () => {
   const hamburger = document.querySelector('.hamburger');
@@ -298,5 +302,6 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 </script>
+
 </body>
 </html>
