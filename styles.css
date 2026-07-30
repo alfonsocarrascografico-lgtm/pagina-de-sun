@@ -2542,3 +2542,18 @@ section[id],
   color: #4f4e4e;
   padding: 40px 20px 20px 20px;
 }
+/* Contenedor de cada línea de contacto */
+.contacto-item {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Espacio entre el ícono y el texto */
+  margin-bottom: 12px;
+}
+
+/* Estilo unificado para los íconos vectores */
+.icono-contacto {
+  width: 18px;
+  height: 18px;
+  fill: #3d3d3d; /* Tono gris oscuro corporativo deseado */
+  flex-shrink: 0; /* Evita que el ícono se deforme si el texto es largo */
+}
