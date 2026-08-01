@@ -103,7 +103,7 @@ body {
   right: calc((100% - 1200px) / 2);
   width: 470px;
   height: 100%;
-  background: rgba(255, 255, 255, 0.653);
+  background: rgba(209, 214, 252, 0.5);
   backdrop-filter: blur(8px);
   z-index: 2;
 }
