@@ -60,10 +60,13 @@
     </div></div>
 </header>
 
- <section id="inicio" class="hero">
-  
+<!-- HERO / INICIO -->
+<section class="hero">
   <div class="hero-bg">
-    <img src="img/hero-animado.gif" alt="Hero principal">
+    <video autoplay muted loop playsinline class="hero-video">
+      <source src="img/hero-animado1.mp4" type="video/mp4">
+      Tu navegador no soporta video HTML5.
+    </video>
   </div>
 
   <div class="container hero-content">
@@ -72,15 +75,13 @@
       <p>
         Promoviendo el desarrollo científico, la formación médica y el cuidado integral de la salud renal en Uruguay.
       </p>
-
-     <a href="afiliaciones.html" 
-   class="btn-afiliarse" target="_blank">
-  <img src="img/boton-de-afiliaciones-1.gif" alt="Afiliarse">
-  <span>AFILIARSE</span>
-</a>
-
+      <a href="afiliaciones.html" class="btn-afiliarse" target="_blank">
+        <img src="img/boton-de-afiliaciones-1.gif" alt="Afiliarse">
+        <span>AFILIARSE</span>
+      </a>
     </div>
   </div>
+</section>
 
 </section>
 
@@ -331,7 +332,7 @@ Además, promueve la investigación, el intercambio académico y la actualizaci�
     <div class="contacto-info">
       <h2>Contacto</h2>
       <p>Si tenés consultas o querés afiliarte, completá el formulario y nos comunicaremos a la brevedad.</p>
-       <br><h2>Socios</h2>
+     <br><h2>Socios</h2>
     <p>Formá parte de la Sociedad Uruguaya de Nefrología y accedé a beneficios académicos y científicos.</p>
 
     <a href="afiliaciones.html" 
@@ -339,7 +340,7 @@ Además, promueve la investigación, el intercambio académico y la actualizaci�
        target="_blank">
    Afiliarse
   </a>
-      </div>
+  </div>
 
     <form class="contacto-form">
       <input type="text" placeholder="Nombre" required>
@@ -390,7 +391,6 @@ Además, promueve la investigación, el intercambio académico y la actualizaci�
     <div class="footer-col footer-links">
       <p><strong>SECCIONES DEL SITIO</strong></p>
       <ul>
-        <li><a href="#accesos-rapidos">Accesos</a></li>
         <li><a href="#socios">Socios</a></li>
         <li><a href="#cientifico">Grupos de trabajo</a></li>
         <li><a href="#novedades">Novedades</a></li>
