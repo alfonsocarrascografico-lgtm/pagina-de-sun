@@ -2674,3 +2674,6 @@ section[id],
   
   /* (Conserva los demás estilos que ya tenías para este botón) */
 }
+.btn-afiliarse img {
+  border-radius: inherit; /* Hereda el redondeo del botón principal */
+}
