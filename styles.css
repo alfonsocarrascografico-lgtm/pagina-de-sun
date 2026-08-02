@@ -2663,3 +2663,14 @@ section[id],
   background: rgba(255, 255, 255, 0.35); /* Fondo negro al 35% de opacidad */
   pointer-events: none; /* Permite interactuar a través del velo si fuera necesario */
 }
+.btn-afiliarse {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  
+  /* 🌟 Bordes redondeados y corte de contenido */
+  border-radius: 8px; /* Usa el mismo valor que .boton-seccion (ej. 8px, 10px o 25px para píldora) */
+  overflow: hidden;   /* Evita que el GIF o imagen de adentro tape las esquinas redondeadas */
+  
+  /* (Conserva los demás estilos que ya tenías para este botón) */
+}
