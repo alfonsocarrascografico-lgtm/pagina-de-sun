@@ -82,13 +82,13 @@ body {
 
 .nav {
   display: flex;
-  gap: 40px;
+  gap: 30px;
 }
 
 .nav a {
   text-decoration: none;
   color: #333;
-  font-size: 18px;
+  font-size: 14px;
 }
 /* 🔒 hamburguesa oculta en desktop */
 .hamburger {
