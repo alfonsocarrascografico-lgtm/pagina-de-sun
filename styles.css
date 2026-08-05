@@ -82,7 +82,7 @@ body {
 
 .nav {
   display: flex;
-  gap: 30px;
+  gap: 35px;
 }
 
 .nav a {
