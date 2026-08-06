@@ -2724,15 +2724,15 @@ section[id],
   position: relative;
   display: inline-block;
   
-  /* 🌟 CLAVES PARA EL REDONDEO DEL BOTÓN Y EL GIF 🌟 */
-  border-radius: 50px;   /* Define el redondeo (50px estilo cápsula, o usa 8px / 12px para bordes suaves) */
-  overflow: hidden;      /* Corta y enmascara las esquinas del GIF animado */
+  /* 🌟 REDONDEO Y MÁSCARA PARA EL GIF 🌟 */
+  border-radius: 50px;   /* Cambia a 8px o 12px si prefieres bordes suaves en lugar de cápsula */
+  overflow: hidden;      /* Corta las esquinas rectangulares del GIF animado */
 }
 
 .btn-afiliarse img {
   width: 320px;
   display: block;
-  border-radius: inherit; /* Hereda la curvatura del contenedor */
+  border-radius: inherit; /* Refuerza el redondeo en el elemento de imagen */
 }
 
 .btn-afiliarse span {
@@ -2744,9 +2744,8 @@ section[id],
   color: white;
   font-weight: bold;
   font-size: 24px;
-  pointer-events: none; /* Asegura que los clicks atraviesen el texto directo al enlace o botón */
+  pointer-events: none; /* Asegura que el clic atraviese el texto */
 }
-/* botón en mobile */
-  .btn-afiliarse img {
+.btn-afiliarse img {
     width: 220px !important;
   }
