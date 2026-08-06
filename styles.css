@@ -2727,7 +2727,7 @@ section[id],
   justify-content: center;
   
   /* 🌟 REDONDEO Y MÁSCARA MULTINAVEGADOR 🌟 */
-  border-radius: 50px !important;
+  border-radius: 10px !important;
   overflow: hidden !important;
   
   /* 🔥 TRUCO PARA MÁSCARA DURA: Fuerza el recorte del GIF en motores WebKit/Chromium y evita cuelgues en tests */
@@ -2737,9 +2737,9 @@ section[id],
 }
 
 .btn-afiliarse img {
-  width: 320px;
+  width: 400px;
   display: block;
-  border-radius: 50px !important; /* Aplica el redondeo directamente a la imagen como respaldo */
+  border-radius: 10px !important; /* Aplica el redondeo directamente a la imagen como respaldo */
   object-fit: cover;
 }
 
