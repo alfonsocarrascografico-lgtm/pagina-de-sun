@@ -82,13 +82,13 @@ body {
 
 .nav {
   display: flex;
-  gap: 35px;
+  gap: 30px;
 }
 
 .nav a {
   text-decoration: none;
   color: #333;
-  font-size: 18px;
+  font-size: 15px;
 }
 /* 🔒 hamburguesa oculta en desktop */
 .hamburger {
@@ -2663,17 +2663,58 @@ section[id],
   background: rgba(255, 255, 255, 0.35); /* Fondo negro al 35% de opacidad */
   pointer-events: none; /* Permite interactuar a través del velo si fuera necesario */
 }
-.btn-afiliarse {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  
-  /* 🌟 Bordes redondeados y corte de contenido */
-  border-radius: 8px; /* Usa el mismo valor que .boton-seccion (ej. 8px, 10px o 25px para píldora) */
-  overflow: hidden;   /* Evita que el GIF o imagen de adentro tape las esquinas redondeadas */
-  
-  /* (Conserva los demás estilos que ya tenías para este botón) */
+/* ==============================
+   SCROLL SOLO TARJETA WEBINARS
+   ============================== */
+
+#tarjeta-archivo-webinar .nov-text {
+    max-height: 620px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-right: 12px;
 }
-.btn-afiliarse img {
-  border-radius: inherit; /* Hereda el redondeo del botón principal */
+
+#tarjeta-archivo-webinar .nov-text-block {
+    margin-bottom: 30px;
+}
+
+
+/* Scroll personalizado solo webinars */
+
+#tarjeta-archivo-webinar .nov-text::-webkit-scrollbar {
+    width: 8px;
+}
+
+#tarjeta-archivo-webinar .nov-text::-webkit-scrollbar-track {
+    background: #edf2f7;
+    border-radius: 10px;
+}
+
+#tarjeta-archivo-webinar .nov-text::-webkit-scrollbar-thumb {
+    background: #5d8ec7;
+    border-radius: 10px;
+}
+
+#tarjeta-archivo-webinar .nov-text::-webkit-scrollbar-thumb:hover {
+    background: #4578b5;
+}
+/* Corrección vertical exclusiva para tarjeta webinars */
+
+#tarjeta-archivo-webinar .nov-text {
+    display: block;
+    max-height: 620px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-right: 12px;
+    padding-top: 0;
+}
+/* Botones webinars a ancho completo */
+#tarjeta-webinar .nov-text-block {
+    width: 100%;
+}
+
+#tarjeta-webinar .btn-cientifico {
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
 }
