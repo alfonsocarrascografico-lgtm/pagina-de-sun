@@ -2718,3 +2718,42 @@ section[id],
     display: flex;
     box-sizing: border-box;
 }
+/* ================= BOTÓN AFILIARSE (HERO) ================= */
+
+.btn-afiliarse {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  
+  /* 🌟 REDONDEO DEL CONTENEDOR Y MÁSCARA */
+  border-radius: 10px !important;
+  overflow: hidden !important;
+  
+  /* 🔥 FORZAR RECORTADO DE GIF EN MOTORES WEBKIT/CHROMIUM */
+  isolation: isolate;
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
+  mask-image: -webkit-radial-gradient(white, black);
+}
+
+.btn-afiliarse img {
+  width: 320px; /* Adjusta este valor para el ancho */
+  display: block;
+  border-radius: 10px !important;
+  
+  /* 🔥 CORRECCIÓN PARA EVITAR BORDES DUROS EN RADIOS PEQUEÑOS */
+  outline: 1px solid transparent;
+  backface-visibility: hidden;
+}
+
+.btn-afiliarse span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  pointer-events: none;
+}
