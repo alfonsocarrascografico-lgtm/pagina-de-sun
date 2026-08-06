@@ -2718,35 +2718,3 @@ section[id],
     display: flex;
     box-sizing: border-box;
 }
-/* ================= BOTÓN AFILIARSE (HERO) ================= */
-
-.btn-afiliarse {
-  position: relative;
-  display: inline-block;
-  
-  /* 🌟 CLAVES PARA EL REDONDEO DEL BOTÓN Y EL GIF 🌟 */
-  border-radius: 50px;   /* Define el redondeo (50px estilo cápsula, o usa 8px / 12px para bordes suaves) */
-  overflow: hidden;      /* Corta y enmascara las esquinas del GIF animado */
-}
-
-.btn-afiliarse img {
-  width: 320px;
-  display: block;
-  border-radius: inherit; /* Hereda la curvatura del contenedor */
-}
-
-.btn-afiliarse span {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  
-  color: white;
-  font-weight: bold;
-  font-size: 24px;
-  pointer-events: none; /* Asegura que los clicks atraviesen el texto directo al enlace o botón */
-}
-/* botón en mobile */
-  .btn-afiliarse img {
-    width: 220px !important;
-  }
