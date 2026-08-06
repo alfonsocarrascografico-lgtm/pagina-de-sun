@@ -2722,17 +2722,25 @@ section[id],
 
 .btn-afiliarse {
   position: relative;
-  display: inline-block;
+  display: inline-flex;       /* inline-flex previene fallos de renderizado en bordes comparado con inline-block */
+  align-items: center;
+  justify-content: center;
   
-  /* 🌟 REDONDEO Y MÁSCARA PARA EL GIF 🌟 */
-  border-radius: 50px;   /* Cambia a 8px o 12px si prefieres bordes suaves en lugar de cápsula */
-  overflow: hidden;      /* Corta las esquinas rectangulares del GIF animado */
+  /* 🌟 REDONDEO Y MÁSCARA MULTINAVEGADOR 🌟 */
+  border-radius: 50px !important;
+  overflow: hidden !important;
+  
+  /* 🔥 TRUCO PARA MÁSCARA DURA: Fuerza el recorte del GIF en motores WebKit/Chromium y evita cuelgues en tests */
+  isolation: isolate;
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
+  mask-image: -webkit-radial-gradient(white, black);
 }
 
 .btn-afiliarse img {
   width: 320px;
   display: block;
-  border-radius: inherit; /* Refuerza el redondeo en el elemento de imagen */
+  border-radius: 50px !important; /* Aplica el redondeo directamente a la imagen como respaldo */
+  object-fit: cover;
 }
 
 .btn-afiliarse span {
@@ -2744,8 +2752,5 @@ section[id],
   color: white;
   font-weight: bold;
   font-size: 24px;
-  pointer-events: none; /* Asegura que el clic atraviese el texto */
+  pointer-events: none; /* Asegura que los clicks pasen directo al botón */
 }
-.btn-afiliarse img {
-    width: 220px !important;
-  }
