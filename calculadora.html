@@ -22,24 +22,10 @@
       font-size: 18px;
       text-decoration: none;
       transition: opacity 0.3s ease;
-      margin-top: 10px;
+      margin-top: 20px;
     }
     .btn-cientifico:hover {
       opacity: 0.8;
-    }
-
-    /* Ajustes para íconos de contacto */
-    .contacto-item {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      margin-bottom: 12px;
-    }
-    .icono-contacto {
-      width: 18px;
-      height: 18px;
-      fill: #3d3d3d;
-      flex-shrink: 0;
     }
   </style>
 </head>
@@ -77,11 +63,11 @@
         </a>
       </div>
 
-      <!-- BOTÓN HAMBURGUESA -->
+      <!-- 🔥 BOTÓN HAMBURGUESA -->
       <div class="hamburger">☰</div>
 
-      <nav class="nav">
-        <a href="index.html#institucional">Sobre SUN</a>
+        <nav class="nav">
+<a href="index.html#institucional">Sobre SUN</a>
 <a href="index.html#accesos-rapidos">Accesos</a>
 <a href="index.html#socios">Socios</a>
 <a href="index.html#cientifico">Grupos de trabajo</a>
@@ -95,113 +81,116 @@
   </div>
 </header>
 
-<!-- CONTENIDO PRINCIPAL -->
-<section id="congresos" class="seccion-destacada">
+<!-- 🔷 GUÍAS CLÍNICAS -->
+<section id="laborales">
   <div class="container">
-    <div class="nov-principal">
-      <a href="#" class="nov-card horizontal" id="congreso-principal">        
-        <div class="nov-img" style="background-image: url('img/auditorio.jpg');"></div>
-        
+    <h2 class="titulo-seccion">Calculadoras</h2>
+
+    <div class="nov-principal" id="tarjeta-laborales">
+      <div class="nov-card horizontal">
+        <div class="nov-img" style="background-image: url('img/calculadora-funcion-renal.jpg');"></div>
         <div class="nov-text">
-          <h2>Principales Congresos y Encuentros 2026</h2>
-          <p>
-            Marzo 6-7 (Montevideo, Uruguay): Primer Encuentro Internacional Nefrológico 2026 (SLANH, Médica Uruguaya, Mayo Clinic). Venue: Hotel Hyatt Centric. Enfocado en enfermedad renal crónica y avances en diálisis.<br><br>
-            Marzo 4-7 (Internacional/LATAM): Séptimo Congreso GEMAV - Primer Congreso GEMAV LATAM. Congreso internacional de acceso vascular.<br><br>
-            Abril 17-18 (Argentina): Séptimo congreso de la región SAR (Sociedad Argentina de Reumatología - posible cruce con afecciones renales/autoinmunes, confirmar agenda nefrológica específica).<br><br>
-            Octubre 1-2 (Montevideo, Uruguay): XIV Congreso Uruguayo de Nefrología y jornadas asociadas. Lugar: Centro de Convenciones Radisson.<br><br>
-            Octubre 28-31 (Mar del Plata, Argentina): XIV Congreso ALANEPE (Asociación Latinoamericana de Nefrología Pediátrica)<br><br>
-            Marzo 26 (Virtual): Seminario para Nefrólogos Jóvenes 2026 - Anatomía patológica, organizado por Alanepe (Asociación Latinoamericana de Nefrología Pediátrica).
-          </p>
+          <h2>Calculadora de función renal</h2>
+          <p>Herramienta desarrollada por la Sociedad Uruguaya de Nefrología (SUN) para la estimación rápida y simultánea del filtrado glomerular y la función renal mediante las ecuaciones Cockcroft-Gault, MDRD-4 y CKD-EPI (2021), orientada a optimizar la práctica clínica diaria.</p>
+          <a href="calculadora-filtrado.html" class="btn-cientifico">
+            Calcular
+          </a>
         </div>
-      </a>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- SECCIÓN LISTADO CONGRESOS (FONDO ANCHO COMPLETO 100%) -->
-<section class="section alt-bg">
-  
-  <!-- CONTENEDOR 1: Bloque original de congresos -->
-  <div class="container section-content">
-    <div class="nov-listado" id="congresos-listado-1">
-      <div class="nov-row">
+<!-- 🔷 CLÍNICA -->
+<section id="científica">
+  <div class="container">
 
-        <a href="https://atenea.com.uy/eventos/xiv-congreso-uruguayo-de-nefrologia" target="_blank" rel="noopener noreferrer" class="nov-card">
-          <div class="nov-img" style="background-image: url('img/afiche-con-logo-smu.jpg');"></div>
-          <div class="nov-text">
-            <h3>XIV Congreso Uruguayo de Nefrología 2026</h3>
-            <p>El próximo gran evento en Uruguay es el XIV Congreso Uruguayo de Nefrología, que se realizará del 1 al 2 de octubre de 2026 en el Centro de Convenciones del Radisson Montevideo Victoria Plaza Hotel.</p>
-          </div>
-        </a>
-
-        <a href="https://can2026.com.ar/" target="_blank" rel="noopener noreferrer" class="nov-card">
-          <div class="nov-img" style="background-image: url('img/698381561_971750632279406_152289327295394215_n.jpg');"></div>
-          <div class="nov-text">
-            <h3>XXVI Congreso Argentino de Nefrología (CAN 2026)</h3>
-            <p>Se realizará del 18 al 21 de noviembre de 2026 en la ciudad de Neuquén, organizado por la Sociedad Argentina de Nefrología (SAN).</p>
-          </div>
-        </a>
-
+    <div class="nov-principal" id="tarjeta-científica">
+      <div class="nov-card horizontal">
+        <div class="nov-img" style="background-image: url('img/calculadora-dialisis.jpg');"></div>
+        <div class="nov-text">
+          <h2>Calculadora de Diálisis</h2>
+          <p>Herramienta desarrollada por la Sociedad Uruguaya de Nefrología (SUN) para la estimación de la dosis de hemodiálisis (Kt/V sp por Daugirdas II, URR y tasa de ultrafiltración), facilitando el monitoreo de la adecuación dialítica.</p>
+          <a href="calculadora-dialisis.html" class="btn-cientifico">
+            Calcular
+          </a>
+        </div>
       </div>
     </div>
   </div>
-
-  <!-- CONTENEDOR 2: Nuevos bloques de congresos -->
-  <div class="container section-content" style="margin-top: 30px;">
-    <div class="nov-listado" id="congresos-listado-2">
-      <div class="nov-row">
-
-        <a href="https://www.theisn.org/wcn/" target="_blank" rel="noopener noreferrer" class="nov-card">
-          <div class="nov-img" style="background-image: url('img/congreso-wcn-2027.jpeg');"></div>
-          <div class="nov-text">
-            <h3>WCN'27</h3>
-            <p>¡Comienza la cuenta regresiva para abril de 2027 ! ¡Nos vemos en Kuala Lumpur !<br>El programa WCN'27 está diseñado para ayudar a los profesionales de la atención renal a explorar los cambios que se están produciendo en el sector y lo que esto significa para la investigación, la práctica y la atención al paciente.</p>
-          </div>
-        </a>
-
-        <a href="https://congresoslanh.org" target="_blank" rel="noopener noreferrer" class="nov-card">
-          <div class="nov-img" style="background-image: url('img/congreso-slanh-2027.jpeg');"></div>
-          <div class="nov-text">
-            <h3>Congreso SLANH 2027</h3>
-            <p>En Panamá del 25 al 28 de agosto, será el principal encuentro científico de la nefrología latinoamericana. Este espacio académico promoverá el intercambio de experiencias, la actualización en nuevas terapias y tecnologías, y la discusión de los desafíos actuales en el cuidado renal, fortaleciendo la colaboración regional y el desarrollo de la especialidad en toda Latinoamérica.</p>
-          </div>
-        </a>
-
-      </div>
-    </div>
-  </div>
-
 </section>
 
-<!-- FOOTER (FONDO ANCHO COMPLETO 100%) -->
+<!-- 🔷 PUBLICACIONES -->
+<section id="educación">
+  <div class="container">
+
+    <div class="nov-principal" id="tarjeta-educación">
+      <div class="nov-card horizontal">
+        <div class="nov-img" style="background-image: url('img/calculadora-sodio.jpg');"></div>
+        <div class="nov-text">
+          <h2>Calculadora de Trastornos del Sodio</h2>
+          <p>Herramienta desarrollada por la Sociedad Uruguaya de Nefrología (SUN) para la estimación del agua corporal total y la tasa de corrección de trastornos del sodio mediante la fórmula de Adrogué-Madias, garantizando un manejo seguro de la fluidoterapia.</p>
+          <a href="calculadora-sodio.html" class="btn-cientifico">
+            Calcular
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 🔷 WEBINARS -->
+<section id="ira">
+  <div class="container">
+
+    <div class="nov-principal" id="tarjeta-ira">
+      <div class="nov-card horizontal">
+        <div class="nov-img" style="background-image: url('img/calculadora-funcion-mineral.jpg');"></div>
+        <div class="nov-text">
+          <h2>Calculadora de Metabolismo Mineral y Óseo (CKD-MBD)</h2>
+          <p>Herramienta desarrollada por la Sociedad Uruguaya de Nefrología (SUN) para el cálculo del calcio corregido por albúmina y el producto calcio-fósforo, orientada a la evaluación del riesgo metabólico y cardiovascular en la ERC.</p>
+          <a href="calculadora-mineral.html" class="btn-cientifico">
+            Calcular
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <footer class="site-footer">
   <div class="footer-container">
     
     <!-- COLUMNA 1: Logo y Contacto -->
     <div class="footer-col footer-info">
       <img src="img/LOGO-BN.png" alt="Sociedad Uruguaya de Nefrología" class="footer-logo">
-      <p><strong>Sociedad Uruguaya de Nefrología</strong></p>
-      
-      <p class="contacto-item">
-        <svg class="icono-contacto" viewBox="0 0 24 24">
-          <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
-        </svg>
-        <span>Lord Ponsonby 2430, Montevideo, Uruguay</span>
-      </p>
+      <div class="footer-info">
+  <p><strong>Sociedad Uruguaya de Nefrología</strong></p>
+  
+  <p class="contacto-item">
+    <!-- Ícono Ubicación (estilo pin circular) -->
+    <svg class="icono-contacto" viewBox="0 0 24 24">
+      <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+    </svg>
+    <span>Lord Ponsonby 2430, Montevideo, Uruguay</span>
+  </p>
 
-      <p class="contacto-item">
-        <svg class="icono-contacto" viewBox="0 0 24 24">
-          <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
-        </svg>
-        <span>+598 92 539 901</span>
-      </p>
+  <p class="contacto-item">
+    <!-- Ícono Teléfono -->
+    <svg class="icono-contacto" viewBox="0 0 24 24">
+      <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+    </svg>
+    <span>+598 92 539 901</span>
+  </p>
 
-      <p class="contacto-item">
-        <svg class="icono-contacto" viewBox="0 0 24 24">
-          <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
-        </svg>
-        <span>contacto@sun.org.uy</span>
-      </p>
+  <p class="contacto-item">
+    <!-- Ícono Email -->
+    <svg class="icono-contacto" viewBox="0 0 24 24">
+      <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+    </svg>
+    <span>contacto@sun.org.uy</span>
+  </p>
+</div>
     </div>
 
     <!-- COLUMNA 2: Secciones del Sitio -->
@@ -266,8 +255,6 @@
     <p>© 2026 SUN - Sociedad Uruguaya de Nefrología | Desarrollado por Alfonso Carrasco Gráfico</p>
   </div>
 </footer>
-
-<!-- SCRIPTS -->
 <script>
 window.addEventListener("DOMContentLoaded", () => {
   const getOffset = () => window.innerWidth <= 768 ? 80 : 172;
@@ -301,7 +288,6 @@ window.addEventListener("DOMContentLoaded", () => {
   });
 });
 </script>
-
 <script>
 document.addEventListener("DOMContentLoaded", () => {
   const hamburger = document.querySelector('.hamburger');
@@ -320,6 +306,5 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 </script>
-
 </body>
 </html>
