@@ -9,6 +9,36 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
   
   <style>
+    .header-container {
+      position: relative;
+      overflow: hidden;
+      border-radius: 0.375rem;
+    }
+
+    .header-img {
+      max-height: 250px;
+      object-fit: cover;
+      width: 100%;
+      display: block;
+    }
+
+    /* Overlay para superponer el título con sombreado */
+    .header-overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 1.5rem;
+      /* Gradiente oscuro de abajo hacia arriba para mayor contraste */
+      background: linear-gradient(transparent, rgba(0, 0, 0, 0.75));
+      color: #ffffff;
+    }
+
+    .header-overlay h1 {
+      /* Sombreado de texto explícito */
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    }
+
     .card-resultado {
       transition: all 0.3s ease;
       border: 1px solid #dee2e6;
@@ -21,11 +51,6 @@
     .badge-kdigo {
       font-size: 0.85rem;
       padding: 6px 10px;
-    }
-    .header-img {
-      max-height: 200px;
-      object-fit: cover;
-      width: 100%;
     }
   </style>
 </head>
@@ -43,14 +68,19 @@
     <!-- Ficha Principal estilo Documento / Recomendaciones -->
     <article class="bg-white p-4 p-md-5 rounded shadow-sm border">
       
+      <!-- Encabezado con estética unificada -->
       <header class="border-bottom pb-3 mb-4">
-        <!-- Imagen del Encabezado -->
-        <div class="mb-3 overflow-hidden rounded">
-          <img src="img/cientifico.jpg" alt="Encabezado SUN" class="img-fluid header-img">
+        
+        <!-- Cabezal con imagen y título superpuesto -->
+        <div class="header-container mb-3">
+          <img src="img/cientifico.jpg" alt="Encabezado SUN" class="header-img">
+          
+          <div class="header-overlay">
+            <span class="badge bg-primary mb-2">Herramienta Clínica</span>
+            <h1 class="h2 fw-bold text-white mb-0">Calculadora de Metabolismo Mineral (CKD-MBD)</h1>
+          </div>
         </div>
 
-        <span class="badge bg-primary mb-2">Herramienta Clínica</span>
-        <h1 class="h2 fw-bold text-dark">Calculadora de Metabolismo Mineral (CKD-MBD)</h1>
         <p class="text-muted mb-0">Cálculo de Calcio Corregido por Albúmina y Producto Calcio-Fósforo para la evaluación de riesgo metabólico y vascular.</p>
       </header>
 
